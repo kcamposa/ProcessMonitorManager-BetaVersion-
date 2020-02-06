@@ -1,0 +1,21 @@
+﻿Installing assembly 'C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.InstallLog
+   assemblypath = C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Committing assembly 'C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.InstallLog
+   assemblypath = C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe
+Uninstalling assembly 'C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.InstallLog
+   assemblypath = C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe
+Removing EventLog source Service1.
+Service Service1 is being removed from the system...
+Service Service1 was successfully removed from the system.

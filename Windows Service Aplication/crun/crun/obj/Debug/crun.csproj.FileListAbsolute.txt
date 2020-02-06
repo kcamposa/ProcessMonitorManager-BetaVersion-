@@ -1,0 +1,9 @@
+C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe.config
+C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.exe
+C:\Users\kcamposa\source\repos\crun\crun\bin\Debug\crun.pdb
+C:\Users\kcamposa\source\repos\crun\crun\obj\Debug\crun.csprojAssemblyReference.cache
+C:\Users\kcamposa\source\repos\crun\crun\obj\Debug\crun.ProjectInstaller.resources
+C:\Users\kcamposa\source\repos\crun\crun\obj\Debug\crun.csproj.GenerateResource.cache
+C:\Users\kcamposa\source\repos\crun\crun\obj\Debug\crun.csproj.CoreCompileInputs.cache
+C:\Users\kcamposa\source\repos\crun\crun\obj\Debug\crun.exe
+C:\Users\kcamposa\source\repos\crun\crun\obj\Debug\crun.pdb

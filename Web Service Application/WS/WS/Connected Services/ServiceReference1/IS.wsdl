@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="receiveMachines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NameMachine" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="connection" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="receiveMachinesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="changeStatusMachinesFALSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PC" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="changeStatusMachinesFALSEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="changeStatusMachinesFALSEResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchStatusMachinesFALSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PC" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchStatusMachinesFALSEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="searchStatusMachinesFALSEResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="changeStatusMachinesTRUE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PC" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="changeStatusMachinesTRUEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="changeStatusMachinesTRUEResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchStatusMachinesTRUE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PC" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchStatusMachinesTRUEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="searchStatusMachinesTRUEResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchMachinesTRUE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nameMachine" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchMachinesTRUEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="searchMachinesTRUEResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchMachinesFALSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nameMachine" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchMachinesFALSEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="searchMachinesFALSEResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="showmachinesFALSE">
+        <s:complexType />
+      </s:element>
+      <s:element name="showmachinesFALSEResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="receiveMachinesSoapIn">
+    <wsdl:part name="parameters" element="tns:receiveMachines" />
+  </wsdl:message>
+  <wsdl:message name="receiveMachinesSoapOut">
+    <wsdl:part name="parameters" element="tns:receiveMachinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="changeStatusMachinesFALSESoapIn">
+    <wsdl:part name="parameters" element="tns:changeStatusMachinesFALSE" />
+  </wsdl:message>
+  <wsdl:message name="changeStatusMachinesFALSESoapOut">
+    <wsdl:part name="parameters" element="tns:changeStatusMachinesFALSEResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchStatusMachinesFALSESoapIn">
+    <wsdl:part name="parameters" element="tns:searchStatusMachinesFALSE" />
+  </wsdl:message>
+  <wsdl:message name="searchStatusMachinesFALSESoapOut">
+    <wsdl:part name="parameters" element="tns:searchStatusMachinesFALSEResponse" />
+  </wsdl:message>
+  <wsdl:message name="changeStatusMachinesTRUESoapIn">
+    <wsdl:part name="parameters" element="tns:changeStatusMachinesTRUE" />
+  </wsdl:message>
+  <wsdl:message name="changeStatusMachinesTRUESoapOut">
+    <wsdl:part name="parameters" element="tns:changeStatusMachinesTRUEResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchStatusMachinesTRUESoapIn">
+    <wsdl:part name="parameters" element="tns:searchStatusMachinesTRUE" />
+  </wsdl:message>
+  <wsdl:message name="searchStatusMachinesTRUESoapOut">
+    <wsdl:part name="parameters" element="tns:searchStatusMachinesTRUEResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchMachinesTRUESoapIn">
+    <wsdl:part name="parameters" element="tns:searchMachinesTRUE" />
+  </wsdl:message>
+  <wsdl:message name="searchMachinesTRUESoapOut">
+    <wsdl:part name="parameters" element="tns:searchMachinesTRUEResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchMachinesFALSESoapIn">
+    <wsdl:part name="parameters" element="tns:searchMachinesFALSE" />
+  </wsdl:message>
+  <wsdl:message name="searchMachinesFALSESoapOut">
+    <wsdl:part name="parameters" element="tns:searchMachinesFALSEResponse" />
+  </wsdl:message>
+  <wsdl:message name="showmachinesFALSESoapIn">
+    <wsdl:part name="parameters" element="tns:showmachinesFALSE" />
+  </wsdl:message>
+  <wsdl:message name="showmachinesFALSESoapOut">
+    <wsdl:part name="parameters" element="tns:showmachinesFALSEResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISSoap">
+    <wsdl:operation name="receiveMachines">
+      <wsdl:input message="tns:receiveMachinesSoapIn" />
+      <wsdl:output message="tns:receiveMachinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="changeStatusMachinesFALSE">
+      <wsdl:input message="tns:changeStatusMachinesFALSESoapIn" />
+      <wsdl:output message="tns:changeStatusMachinesFALSESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchStatusMachinesFALSE">
+      <wsdl:input message="tns:searchStatusMachinesFALSESoapIn" />
+      <wsdl:output message="tns:searchStatusMachinesFALSESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="changeStatusMachinesTRUE">
+      <wsdl:input message="tns:changeStatusMachinesTRUESoapIn" />
+      <wsdl:output message="tns:changeStatusMachinesTRUESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchStatusMachinesTRUE">
+      <wsdl:input message="tns:searchStatusMachinesTRUESoapIn" />
+      <wsdl:output message="tns:searchStatusMachinesTRUESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchMachinesTRUE">
+      <wsdl:input message="tns:searchMachinesTRUESoapIn" />
+      <wsdl:output message="tns:searchMachinesTRUESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchMachinesFALSE">
+      <wsdl:input message="tns:searchMachinesFALSESoapIn" />
+      <wsdl:output message="tns:searchMachinesFALSESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="showmachinesFALSE">
+      <wsdl:input message="tns:showmachinesFALSESoapIn" />
+      <wsdl:output message="tns:showmachinesFALSESoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ISSoap" type="tns:ISSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="receiveMachines">
+      <soap:operation soapAction="http://tempuri.org/receiveMachines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeStatusMachinesFALSE">
+      <soap:operation soapAction="http://tempuri.org/changeStatusMachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchStatusMachinesFALSE">
+      <soap:operation soapAction="http://tempuri.org/searchStatusMachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeStatusMachinesTRUE">
+      <soap:operation soapAction="http://tempuri.org/changeStatusMachinesTRUE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchStatusMachinesTRUE">
+      <soap:operation soapAction="http://tempuri.org/searchStatusMachinesTRUE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchMachinesTRUE">
+      <soap:operation soapAction="http://tempuri.org/searchMachinesTRUE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchMachinesFALSE">
+      <soap:operation soapAction="http://tempuri.org/searchMachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showmachinesFALSE">
+      <soap:operation soapAction="http://tempuri.org/showmachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ISSoap12" type="tns:ISSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="receiveMachines">
+      <soap12:operation soapAction="http://tempuri.org/receiveMachines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeStatusMachinesFALSE">
+      <soap12:operation soapAction="http://tempuri.org/changeStatusMachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchStatusMachinesFALSE">
+      <soap12:operation soapAction="http://tempuri.org/searchStatusMachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeStatusMachinesTRUE">
+      <soap12:operation soapAction="http://tempuri.org/changeStatusMachinesTRUE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchStatusMachinesTRUE">
+      <soap12:operation soapAction="http://tempuri.org/searchStatusMachinesTRUE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchMachinesTRUE">
+      <soap12:operation soapAction="http://tempuri.org/searchMachinesTRUE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchMachinesFALSE">
+      <soap12:operation soapAction="http://tempuri.org/searchMachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showmachinesFALSE">
+      <soap12:operation soapAction="http://tempuri.org/showmachinesFALSE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IS">
+    <wsdl:port name="ISSoap" binding="tns:ISSoap">
+      <soap:address location="http://localhost:60054/IS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ISSoap12" binding="tns:ISSoap12">
+      <soap12:address location="http://localhost:60054/IS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
