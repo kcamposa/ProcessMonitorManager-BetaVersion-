@@ -1,5 +1,4 @@
 # ProcessMonitorManager-BetaVersion-
-Monitor any process in Windows 10 and register the process in Database
 
 ### Descripción:
 Una herramienta que analiza si un proceso en específico de la computadora se encuentra corriendo, 
